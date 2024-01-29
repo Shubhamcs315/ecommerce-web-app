@@ -1,0 +1,36 @@
+#fr{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 35px;
+  border: 1px solid blueviolet;
+  width: 310px;
+}
+textarea{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 35px;
+  border: 1px solid blueviolet;
+  width: 310px;
+}
+#btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 35px;
+  border: 1px solid blueviolet;
+  width: 310px;
+  color: blueviolet;
+}
+.fom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#h1{
+    color: black;
+}

@@ -1,0 +1,41 @@
+.sell{
+    display: flex;
+    justify-content: center;
+}
+.auth{
+    display:flex;
+    flex-direction: column;
+}
+.sk{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 35px;
+  border: 1px solid blueviolet;
+}
+button{
+    margin-top: 20px;
+    height: 35px;
+    border: 2px solid blueviolet;
+    color: blueviolet;
+}
+#k1{
+    margin: 33px;
+  color: blueviolet;
+}
+.anchor{
+    color: blueviolet;
+    text-decoration: underline;
+    margin: 5px;
+    margin-left: 70px;
+}
+.mt{
+    color: red;
+  font-size: revert;
+  font-weight: lighter;
+  margin-left: 36px;
+}

@@ -1,0 +1,29 @@
+<div class="container">
+    <h1><a class="sq" routerLink="">E-Comm</a></h1>
+    <div class="vertical">
+        <div class="inp" *ngIf="status==='default'">
+            <input type="text" id="s1" #skk  (keyup)="getSearch(skk.value)">
+            <button id="btn">Search</button>
+        </div>
+        <div class="serch" >
+            <div class="ab" *ngFor="let k of da">
+                <p>{{k.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div [ngSwitch]="status" class="mkk">
+        <ul id="list" *ngSwitchCase="'default'">
+            <li><a class="sq a" routerLink="Seller">Seller</a></li>
+            <li><a class="sq a" routerLink="">Home</a></li>
+            <li><a class="sq a" routerLink="#">Login</a></li>
+            <li><a class="sq a" routerLink="#">Cart(0)</a></li>
+        </ul>
+        <ul id="list" *ngSwitchCase="'seller'">
+            <li class="sm"><a class="sq" routerLink="seller-add">Add Product</a></li>
+            <li class="sm"><a class="sq" routerLink="seller-home">List</a></li>
+            <li class="sm"><a class="sq" routerLink="#" (click)="logout()">Logout</a></li>
+            <li class="sm"><a class="sq" routerLink="#">{{name | titlecase}}</a></li>
+        </ul>
+    </div>
+</div>
+<router-outlet></router-outlet>

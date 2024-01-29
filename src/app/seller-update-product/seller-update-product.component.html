@@ -1,0 +1,14 @@
+<div class="fom">
+    <h1 id="h1">Update New Product</h1>
+    <div class="formm">
+        <form #fm="ngForm" id="fr" (submit)="sendData(fm.value)">
+        <input type="text" name="name" ngModel="{{listData?.name}}" placeholder="Enter Product Name">
+        <input type="text" name="price" ngModel="{{listData?.price}}" placeholder="Enter Product Price">
+        <input type="text" name="Category" ngModel="{{listData?.Category}}" placeholder="Enter Product Category">
+        <input type="text" name="color" ngModel="{{listData?.color}}" placeholder="Enter Product color">
+        <textarea name="des" ngModel="{{listData?.des}}" id="des" cols="30" rows="10" placeholder="Enter Product Description"></textarea>
+        <input type="text" name="url" ngModel="{{listData?.url}}" placeholder="Enter Product image URL">
+        <button id="btn">Update Product</button>
+        </form>
+    </div>
+</div>

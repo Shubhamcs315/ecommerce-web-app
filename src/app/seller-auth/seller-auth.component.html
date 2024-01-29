@@ -1,0 +1,22 @@
+<div class="sell">
+    <div class="auth" *ngIf="!logm">
+        <h1 id="k1">Seller sign-up</h1>
+        <form #formm="ngForm" class="sk" (submit)="getData(formm.value)">
+            <input type="text" ngModel name="name" placeholder="Enter Name">
+            <input type="password" ngModel name="password" placeholder="Enter Password" >
+            <input type="email" ngModel name="email" placeholder="Enter Email">
+            <button type="submit">Sign Up</button>
+        </form>
+        <a (click)="toggle()" class="anchor">Already have a account</a>
+    </div>
+    <div class="auth" *ngIf="logm">
+        <h1 id="k1">Seller Login</h1>
+    <p class="mt" *ngIf="b">Invalid email or Password</p>
+        <form #formk="ngForm" class="sk" (submit)="getData1(formk.value)">
+            <input type="email" ngModel name="email" placeholder="Enter Email">
+            <input type="password" ngModel name="password" placeholder="Enter Password" >
+            <button type="submit">Sign Up</button>
+        </form>
+        <a (click)="toggle()" class="anchor">Donn't have a account</a>
+    </div>
+</div>

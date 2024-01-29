@@ -1,0 +1,33 @@
+<ngb-carousel style="margin-left: 5%; margin-bottom: 40px;">
+    <ng-template ngbSlide  *ngFor="let item of arr">
+        <div class="picsum-img-wrapper">
+            <img src={{item.url}} alt="Random first slide" />
+        </div>
+        <div class="carousel-caption">
+            <h3>{{item.name}}</h3>
+            <p>{{item.des}}</p>
+        </div>
+    </ng-template>
+</ngb-carousel>
+<div class="product-list">
+    <h1>Trendy Products</h1>
+    <div class="cll">
+        <div class="product-item"  *ngFor="let it of ar">
+            <div class="mn">
+                <img class="mra" src={{it.url}} alt="">
+            </div>
+            <div class="mn mm">
+                <p class="bol">{{it.name}}</p>
+                <p>Price {{it.price}}</p>
+                <p>Color {{it.color}}</p>
+            </div>
+            <div class="mn k">
+                <a href="">View Details</a>
+                <a href="">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height: 500px;">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro facilis animi, odio doloribus dicta non distinctio sed, sint corporis nesciunt quasi eum! Accusamus aspernatur asperiores aut corrupti, non quaerat qui quasi provident mollitia, placeat assumenda corporis perspiciatis rem officiis vel dolores nobis veniam consectetur unde voluptatum sint ipsa molestias ipsam inventore. Distinctio quos inventore quaerat, iusto et suscipit deleniti ipsum, tenetur corrupti sed, qui eveniet vel accusamus reprehenderit dolores sunt ab eaque explicabo! Ratione, aliquid illum incidunt recusandae delectus exercitationem qui? Inventore dignissimos veniam nam consectetur optio praesentium facere ratione rem harum recusandae cum doloremque nihil voluptatibus consequuntur, magnam tempore libero ducimus voluptates molestias dolorem vero architecto ab! Laborum labore a pariatur, repellendus vel voluptatum deleniti dolorum dolorem dicta culpa aspernatur corrupti? Aliquid tenetur impedit mollitia ut aliquam. Dolores accusamus quae, placeat molestias repudiandae similique, tempora enim ut eaque, sunt itaque? At atque quasi similique accusantium amet aut velit, ex quam fugiat perferendis magnam rem unde doloribus deleniti vero saepe rerum facilis deserunt cupiditate veniam blanditiis. Doloribus atque in magni saepe unde, nulla cupiditate error voluptas dolorum illum quis alias. Facere aliquid non tenetur quia sit, placeat ducimus, alias, fuga culpa dolorem odio quidem fugit quisquam numquam illum minima quis porro aspernatur consequatur voluptate. Autem placeat, sit voluptatem provident aliquid voluptatibus doloremque exercitationem quaerat maxime nam iusto neque debitis consequuntur soluta numquam aut. Libero culpa deserunt, esse obcaecati ab dolorem. Voluptas itaque aut voluptatem?</p>
+</div>
